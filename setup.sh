@@ -26,7 +26,9 @@ sudo apt-get -qqy update &&
 
 new_server_path="${HOME}/bedrock-server-${VERSION}"
 
-curl -sLO "https://minecraft.azureedge.net/bin-linux/bedrock-server-${VERSION}.zip" &&
+curl -sL \
+  -o "/tmp/bedrock-server-${VERSION}.zip" \
+  "https://minecraft.azureedge.net/bin-linux/bedrock-server-${VERSION}.zip" &&
   unzip "/tmp/bedrock-server-${VERSION}.zip" -d "${new_server_path}"
 
 cd minecraft-server &&
