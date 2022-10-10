@@ -36,7 +36,6 @@ cd minecraft-server &&
     allowlist.json \
     permissions.json \
     server.properties \
-    whitelist.json \
     worlds \
     "${new_server_path}" &&
   cd .. &&
